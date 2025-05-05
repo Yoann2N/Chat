@@ -13,8 +13,8 @@ class MessageSeeder extends Seeder
     public function run(): void
     {
         Message::create([
-            'expediteur_id' => 'message',
-            'date_envoi' => 'message',
+            'expediteur_id' => '0001',
+            'date_envoi' => '05/05/2025',
             'message' => 'message',
             
         ]);
