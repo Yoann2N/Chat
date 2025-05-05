@@ -20,7 +20,7 @@ class MessageSeeder extends Seeder
             
         ]);
 
-        Message::factory(10)->create();
+        Message::factory(100)->create();
             
     }
 }
