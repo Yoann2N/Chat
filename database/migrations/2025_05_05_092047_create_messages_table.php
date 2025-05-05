@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('destinataire_id')->nullable()->constrained('users')->onDelete('cascade');
             //$table->foreignId('conversation_id')->constrained('conversations')->onDelete('cascade');
             $table->text('message');
-            $table->date("date-heure")->default(now());
+            $table->timestamp("date_heure")->default(now());
             $table->boolean('lu')->default(false);
             $table->timestamp("created_at")->useCurrent();
             $table->timestamp("updated_at")->useCurrent()->useCurrentOnUpdate();

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Message;
 
 class MessageSeeder extends Seeder
 {
@@ -12,14 +13,14 @@ class MessageSeeder extends Seeder
      */
     public function run(): void
     {
-        Messages::create([
+        Message::create([
             'expediteur_id' => '0001',
-            'date_envoi' => '05/05/2025',
+            'date_heure' => now(),
             'message' => 'message',
             
         ]);
 
-        Messages:: factory(10)->create();
+        Message::factory(10)->create();
             
     }
 }
