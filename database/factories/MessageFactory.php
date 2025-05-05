@@ -17,7 +17,7 @@ class MessageFactory extends Factory
     public function definition(): array
     {
         return [
-            'expediteur_id' => 1,
+            'expediteur_id' => User::all()->random()->id,
             'date_envoi' => now(),
             'message' => $this->faker->text(200),
             
