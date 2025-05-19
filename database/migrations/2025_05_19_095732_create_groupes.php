@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
-            $table->int ('Nbr_User')->nullable();
+            $table->integer('Nbr_User')->nullable();
 
         });
     }
