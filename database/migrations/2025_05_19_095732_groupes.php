@@ -11,14 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('conversations', function (Blueprint $table) {
+        Schema::create('tests', function (Blueprint $table) {
             $table->id();
             $table->string('title')->nullable();
+            $table->string('description')->nullable();
             $table->timestamp('created_at')->useCurrent();
             $table->timestamp('updated_at')->useCurrent()->useCurrentOnUpdate();
-            $table->foreignId('creator_id')->constrained('users')->onDelete('cascade');
-            $table->foreignId('interlocuteur1_id')->constrained('users')->onDelete('cascade');
-            $table->foreignId('interlocuteur2_id')->nullable()->constrained('users')->onDelete('cascade');
+            $table->string ('NbrUser')->nullable();
+
         });
     }
 
@@ -27,6 +27,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('conversations');
+        //
     }
 };
