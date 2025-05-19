@@ -1,3 +1,8 @@
 <div>
-    <!-- Walk as if you are kissing the Earth with your feet. - Thich Nhat Hanh -->
+    @foreach ($messages as $message)
+        <div>
+            <h3>{{ $message->date_heure }}</h3>
+            <p>{{ $message->message }}</p>
+        </div>
+    @endforeach
 </div>
