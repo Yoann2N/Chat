@@ -12,12 +12,7 @@ class GroupeSeeder extends Seeder
      * Run the database seeds.
      */
     public function run(): void
-    {
-        $this->call([
-
-            
-
-        ]);
+    {       
         Groupe::factory(100)->create();
     }
     
