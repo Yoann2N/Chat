@@ -10,7 +10,7 @@ class HomeController extends Controller
 {
     public function index() : View
     {
-        return view('home');
+        
 
 
         // Récupère tous les messages dans la varaible $messages

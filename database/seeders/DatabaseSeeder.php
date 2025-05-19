@@ -18,9 +18,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             MessageSeeder::class,
-            ConversationSeeder::class,
-            TestSeeder::class,
-            GroupeSeeder::class,
+            // ConversationSeeder::class,
+            // TestSeeder::class,
+            // GroupeSeeder::class,
         ]);
     }
 }
