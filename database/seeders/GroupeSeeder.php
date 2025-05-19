@@ -4,8 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\Groupe;
 
-class Groupe extends Seeder
+class GroupeSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -13,12 +14,11 @@ class Groupe extends Seeder
     public function run(): void
     {
         $this->call([
-            UserSeeder::class,
-            MessageSeeder::class,
-            ConversationSeeder::class,
-            TestSeeder::class,
-            DatabaseSeeder::class,
+
+            
+
         ]);
+        Groupe::factory(100)->create();
     }
     
 }
