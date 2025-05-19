@@ -19,8 +19,6 @@ class MessageFactory extends Factory
     {
         return [
             'title' => $this->faker->text(25),
-            'created_at' => $this->faker->dateTime,
-            'updated_at' => $this->faker->dateTime,
             'description' => $this->faker->sentence,
             'Nbr_User' => $this->faker->numberBetween(1, 20),
             
