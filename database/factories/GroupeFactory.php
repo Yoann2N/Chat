@@ -22,7 +22,7 @@ class MessageFactory extends Factory
             'created_at' => $this->faker->dateTime,
             'updated_at' => $this->faker->dateTime,
             'description' => $this->faker->sentence,
-            'NbrUser' => $this->faker->numberBetween(1, 20),
+            'Nbr_User' => $this->faker->numberBetween(1, 20),
             
             
             
